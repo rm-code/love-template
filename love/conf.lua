@@ -1,8 +1,8 @@
-local GAME_TITLE = "<replace>";
+local PROJECT_TITLE = "<replace>";
 
-local GAME_IDENTITY = "<replace>";
+local PROJECT_IDENTITY = "<replace>";
 
-local GAME_VERSION = "0000";
+local PROJECT_VERSION = "0000";
 
 local LOVE_VERSION = "0.9.2";
 
@@ -15,11 +15,11 @@ local LOVE_VERSION = "0.9.2";
 -- @param _conf
 --
 function love.conf(t)
-    t.identity = GAME_IDENTITY;
+    t.identity = PROJECT_IDENTITY;
     t.version = LOVE_VERSION;
     t.console = true;
 
-    t.window.title = GAME_TITLE;
+    t.window.title = PROJECT_TITLE;
     t.window.icon = nil;
     t.window.width = 800;
     t.window.height = 600;
@@ -53,19 +53,19 @@ function love.conf(t)
 end
 
 ---
--- Returns the game's version.
+-- Returns the project's version.
 --
 function getVersion()
-    if GAME_VERSION then
-        return GAME_VERSION;
+    if PROJECT_VERSION then
+        return PROJECT_VERSION;
     end
 end
 
 ---
--- Returns the title.
+-- Returns the project's title.
 --
 function getTitle()
-    if GAME_TITLE then
-        return GAME_TITLE;
+    if PROJECT_TITLE then
+        return PROJECT_TITLE;
     end
 end
