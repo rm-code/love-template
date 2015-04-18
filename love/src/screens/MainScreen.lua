@@ -1,5 +1,5 @@
 
-local Screen = require('lib/screenmanager/Screen');
+local Screen = require('lib.screenmanager.Screen');
 
 -- ------------------------------------------------
 -- Module

@@ -1,5 +1,5 @@
 
-local ScreenManager = require('lib/screenmanager/ScreenManager');
+local ScreenManager = require('lib.screenmanager.ScreenManager');
 
 -- ------------------------------------------------
 -- Local Variables
