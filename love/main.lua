@@ -92,4 +92,6 @@ function love.keypressed(key)
     if key == 'f1' then
         showDebug = not showDebug;
     end
+
+    ScreenManager.keypressed(key);
 end
